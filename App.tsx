@@ -9,6 +9,7 @@ import {
 import { THEME } from "./src/theme";
 import { Loading } from "@components/Loading";
 import { Routes } from "./src/routes";
+import { Home } from "@screens/Home";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
