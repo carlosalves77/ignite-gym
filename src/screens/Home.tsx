@@ -44,6 +44,7 @@ export function Home() {
         _contentContainerStyle={{ px: 8 }}
         my={10}
         maxH={10}
+        minH={10}
       />
       <Stack flex={1} px={8}>
         <HStack justifyContent="space-between" mb={5}>
