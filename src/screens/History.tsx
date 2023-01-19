@@ -1,5 +1,12 @@
 import { useCallback, useState } from "react";
-import { SectionList, Text, useToast, Heading, VStack } from "native-base";
+import {
+  SectionList,
+  Text,
+  useToast,
+  Heading,
+  VStack,
+  Center,
+} from "native-base";
 import { useFocusEffect, useRoute } from "@react-navigation/native";
 
 import { ScreenHeader } from "@components/ScreenHeader";
@@ -10,19 +17,20 @@ import { api } from "@services/api";
 import { HistoryByDayDTO } from "@dtos/HistoryByDayDTO";
 
 import { AppError } from "@utils/AppError";
+import { useAuth } from "@hooks/useAuth";
 
 export function History() {
   const [loading, setLoading] = useState(true);
   const [exercises, setExercises] = useState<HistoryByDayDTO[]>([]);
 
   const toast = useToast();
+  const { refreshToken } = useAuth();
 
   async function fetchHistory() {
     try {
       setLoading(true);
       const response = await api.get("/history");
       setExercises(response.data);
-      console.log(response.data);
     } catch (error) {
       const isAppError = error instanceof AppError;
       const title = isAppError ? error.message : "Erro ao buscar histórico";
@@ -40,7 +48,7 @@ export function History() {
   useFocusEffect(
     useCallback(() => {
       fetchHistory();
-    }, [])
+    }, [refreshToken])
   );
 
   return (
@@ -48,7 +56,7 @@ export function History() {
       <ScreenHeader title="Histórico de Exercícios" />
       {loading ? (
         <Loading />
-      ) : (
+      ) : exercises?.length > 0 ? (
         <SectionList
           sections={exercises}
           keyExtractor={(item) => item.id}
@@ -68,13 +76,15 @@ export function History() {
           contentContainerStyle={
             exercises.length === 0 && { flex: 1, justifyContent: "center" }
           }
-          ListEmptyComponent={() => (
-            <Text color="gray.100" textAlign="center">
-              Não há exercícios registrados ainda. {"\n"} Vamos fazer exercícios
-              hoje?
-            </Text>
-          )}
+          showsVerticalScrollIndicator={false}
         />
+      ) : (
+        <Center flex={1}>
+          <Text color="gray.100" textAlign="center">
+            Não há exercícios registrados ainda. {"\n"} Vamos fazer exercícios
+            hoje?
+          </Text>
+        </Center>
       )}
     </VStack>
   );
