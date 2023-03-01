@@ -39,6 +39,14 @@ yarn android
 
 ### App Screenshots
 
-|      Menu      |                          |      Menu      |
+|     Login      |    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    |     SignUp      |
 
-![](https://i.ibb.co/3pDTm6t/Exercises.jpg) ![](https://i.ibb.co/3pDTm6t/Exercises.jpg) 
+![](https://i.ibb.co/2612YpB/Login.jpg)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ![](https://i.ibb.co/fHXqJM5/SingUp.jpg) 
+
+|     Profile      |                          
+
+![](https://i.ibb.co/V27trT9/Profile.jpg)     
+
+|     Exercise      |   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    |      History      |
+
+![](https://i.ibb.co/mCdtPfJ/Exercises.jpg)    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ![](https://i.ibb.co/jfs8WHY/History.jpg) 
